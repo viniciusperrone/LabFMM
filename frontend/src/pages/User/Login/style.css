@@ -38,14 +38,17 @@
   justify-self: center;
   align-self: center;
 }
+
 #logo-heart{
   height: 31px;
   width: 37px;
 }
+
 #teacher-text{
   font: 400 3rem Reem Kufi;
   margin-right: 10px;
 }
+
 #visual-teacher{
   grid-row: 7/8;
   grid-column: 1;
@@ -55,7 +58,6 @@
 
   align-items: center;
   justify-content: center;
-
 }
 
 #form-user{
@@ -67,27 +69,23 @@
 
   align-items: center;
   justify-content: center;
-
 }
 
 .label{
+  width: 300px;
   font: 400 2.25rem Skranji;
-  align-self: flex-start;
-  margin-left: 100px;
   margin-top: 10px;
   margin-bottom: 10px;
 }
 
-
 .info-user{
-  width: 250px;
-  height: 30px;
+  width: 300px;
+  height: 40px;
   background-color: var(--color-primary-input);
   border-color: var(--color-primary-input); 
   -webkit-box-shadow: none; 
   box-shadow: none; 
   border-radius: 25px;
-
 }
 
 .info-user:hover{
@@ -124,9 +122,6 @@ button{
   justify-content: center;
   text-align: center;
   font: 400 2.25rem Skranji;
-
-  
-
 }
 
 #text-go:hover{
@@ -138,11 +133,10 @@ button{
 }
 
 #link-register{
+  width: 200px;
   text-decoration: none;
   margin-top: 20px;
-  margin-left: -110px;
   font: 400 1.6rem Skranji;
 
   color: var(--color-background-internal-text);
 }
-

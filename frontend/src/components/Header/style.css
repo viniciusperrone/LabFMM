@@ -1,7 +1,24 @@
 #header-main{
-  background: var(--color-background-header);
   width: 100vw;
   height: 20vh;
   border-radius: 0 0 25px 25px;
   position: absolute;
+
+  grid-column: 2;
+  grid-row: 1;
+  
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  font: 400 3rem Revalia;
+}
+
+#header-first-text{
+  color: var(--color-background-primary-text);
+}
+
+#header-second-text{
+  color: var(--color-background-secundary-text);
 }

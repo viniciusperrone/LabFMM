@@ -5,13 +5,12 @@ import Background from '../../../components/Background';
 
 function Home(){
   return(
-
-    <Background title="home-user">
-      <p>home menu</p>
-    </Background>
+    <>
+      <Header backgroundColor="#9871F5"/>
       
+      <Background title="home"/>
+    </>
   )
-
 }
 
 export default Home;
