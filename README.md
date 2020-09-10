@@ -1,2 +1,3 @@
 # LabFMM
-- Sistema de alocação de lbs
+- Sistema de alocação de laboratório da FMM.
+-
