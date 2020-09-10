@@ -1,0 +1,7 @@
+#header-main{
+  background: var(--color-background-header);
+  width: 100vw;
+  height: 20vh;
+  border-radius: 0 0 25px 25px;
+  position: absolute;
+}

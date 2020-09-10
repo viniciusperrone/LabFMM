@@ -1,0 +1,68 @@
+@keyframes animacao-input{
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
+
+#form-user-one{
+  grid-row: 1/8; 
+  grid-column: 1;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+#form-user-second{
+  grid-row: 1/8; 
+  grid-column: 2;
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.register-user{
+  width: 250px;
+  height: 30px;
+  background-color: var(--color-primary-input);
+  border-color: var(--color-primary-input); 
+  border-radius: 25px;
+  box-shadow: none;
+}
+
+.register-user:hover{
+  animation: animacao-input 1s;
+}
+
+#botton-create{
+  height: 45px;
+  width: 200px;
+
+  border-radius: 15px;
+  margin-top: 60px;
+  background-color: var(--color-secundary-button);
+
+}
+
+#adm-register{
+  text-decoration: none;
+  font: 400 1.6rem Skranji;
+
+  margin-top: 20px;
+  margin-left: -100px;
+
+  color: var(--color-background-internal-text);
+}

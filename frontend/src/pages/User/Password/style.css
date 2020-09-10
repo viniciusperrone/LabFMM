@@ -1,0 +1,48 @@
+#form-password-one{
+  grid-row: 1/5;
+  grid-column: 1;
+
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+
+}
+#form-password-second{
+  grid-row: 1/5;
+  grid-column: 2;
+
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+#conteiner-down{
+  grid-row: 6/8;
+  grid-column: 1/2;
+
+}
+#botton-change-password{
+  height: 45px;
+  width: 180px;
+
+  border-radius: 15px;
+
+  background-color: var(--color-primary-button);
+
+  
+  align-self: center;
+  text-align: center
+  
+}
+
+.info-password-use{
+  width: 250px;
+  height: 30px;
+  background-color: var(--color-primary-input);
+
+  align-self: center;
+  border-radius: 25px;
+}
