@@ -2,12 +2,16 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 import Background from '../../../components/Background';
+import Header from '../../../components/Header';
 
 import './style.css';
 
 function RegisterUser(){
   return(
-    <div>
+      <>
+      
+        <Header backgroundColor="none"/>
+
         <Background title="register-user">
           <form id="form-user-one">
             <label htmlFor="name" className="label">Nome</label>
@@ -32,7 +36,8 @@ function RegisterUser(){
             </Link>
           </form>
         </Background>
-    </div>
+      </>
+        
   )
 }
 export default RegisterUser;

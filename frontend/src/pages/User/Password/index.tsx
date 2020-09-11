@@ -1,13 +1,16 @@
 import React from 'react';
 
 import Background from '../../../components/Background';
+import Header from '../../../components/Header';
 
 import './style.css';
 
 function AlterarSenha(){
 
   return(
-    <div>
+    <>
+      <Header backgroundColor="none"/>
+
       <Background title="password">
         <form id="form-password-one">
           <label htmlFor="name" className="label">Nome</label>
@@ -22,11 +25,12 @@ function AlterarSenha(){
           <input type="password" className="info-password-use"/>
         </form>
         <div id="conteiner-down">
-          <button id="botton-change-password">alterar senha</button>  
-        </div>
-        
+          <button id="botton-change-password">alterar senha</button>
+        </div>          
       </Background>
-    </div>
+      
+    </>
+  
   )
 }
 

@@ -2,6 +2,7 @@
   width: 100vw;
   height: 20vh;
   border-radius: 0 0 25px 25px;
+
   position: absolute;
 
   grid-column: 2;
