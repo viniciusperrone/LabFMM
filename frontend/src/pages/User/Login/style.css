@@ -29,8 +29,8 @@
 }
 
 #logo-teacher{
-  height: 185px;
-  width: 185px;
+  height: 27vh;
+  width: 19vw;
 
   grid-row: 1/6; 
   grid-column: 1;
@@ -79,8 +79,8 @@
 }
 
 .info-user{
-  width: 300px;
-  height: 40px;
+  width: 25vw;
+  height: 5vh;
   background-color: var(--color-primary-input);
   border-color: var(--color-primary-input); 
   -webkit-box-shadow: none; 
@@ -112,10 +112,10 @@ button{
 }
 
 #text-go{
-  height: 45px;
-  width: 200px;
+  height: 6vh;
+  width: 16vw;
 
-  margin-top: 70px;
+  margin-top: 40%;
   background-color: var(--color-primary-button);
   border-radius: 15px;
   
@@ -125,17 +125,13 @@ button{
 }
 
 #text-go:hover{
-  animation: animacao-button 1s;
-}
-
-#lbl-first{
-  margin-top: 75px;
+  animation: animacao-button 400ms;
 }
 
 #link-register{
   width: 200px;
   text-decoration: none;
-  margin-top: 20px;
+  margin-top: 10%;
   font: 400 1.6rem Skranji;
 
   color: var(--color-background-internal-text);
