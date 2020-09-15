@@ -71,11 +71,51 @@
   justify-content: center;
 }
 
+.input-login{
+  background-color: var(--color-primary-input);
+
+  width: 25vw;
+  height: 5vh;
+
+  border-radius: 15px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.input-children{
+  width: 80%;
+  height: 100%;
+
+  margin-left: 2.5%;
+
+  background-color: var(--color-primary-input);
+}
+
+#image-email-login{
+  width: 30px;
+  height: 30px;
+
+  margin-left: 5%;
+}
+
+#image-email-password{
+  width: 26px;
+  height: 26px;
+
+  margin-left: 5%;
+}
+
 .label{
   width: 300px;
   font: 400 2.25rem Skranji;
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.input-login:hover{
+  animation: animacao-input 1s;
 }
 
 .info-user{
@@ -87,11 +127,6 @@
   box-shadow: none; 
   border-radius: 25px;
 }
-
-.info-user:hover{
-  animation: animacao-input 1s;
-}
-
 input{
   border: none;
   color: var(--color-background-primary-text);

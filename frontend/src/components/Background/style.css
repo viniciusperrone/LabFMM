@@ -13,7 +13,7 @@
 #footer-text{
   grid-row: 3;
   grid-column: 2;
-  margin-top: 15px;
+  align-self: center;
   text-align: center;
   font: 400 2.5rem Risque;
   color: var(--color-background-down-text); 

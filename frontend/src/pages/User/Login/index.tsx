@@ -6,6 +6,8 @@ import Header from '../../../components/Header';
 
 import LogoTeacher from '../../../assets/images/icons/icon_teacher.svg';
 import LogoHeart from '../../../assets/images/icons/purple-heart.svg';
+import EmailIcon from '../../../assets/images/icons/email_icon.svg';
+import PasswordIcon from '../../../assets/images/icons/icon_password.svg';
 
 import './style.css';
 
@@ -23,9 +25,16 @@ function Login(){
 
         <form id="form-user">
             <label htmlFor="email" className="label">Email</label>
-            <input type="text" className="info-user"/>  
+            <div id="input-login-email" className="input-login">
+              <img id="image-email-login"src={EmailIcon} alt="email"/>
+              <input type="text" id="input-children-email" className="input-children"/>
+            </div>
             <label htmlFor="password" className="label">Senha</label>
-            <input type="password" className="info-user"/>
+            <div id="input-login-password" className="input-login">
+              <img id="image-email-password"src={PasswordIcon} alt="password"/>
+              <input type="password" id="input-children-password" className="input-children"/>
+            </div>
+            
 
             <Link to="/home-user">
               <button id="text-go">entrar</button>
