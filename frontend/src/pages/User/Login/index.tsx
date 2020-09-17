@@ -16,7 +16,7 @@ function Login(){
     <>
       <Header backgroundColor="none"/>
 
-      <Background title="login">
+      <Background title="login" width="none" position="none">
         <img id="logo-teacher" src={LogoTeacher} alt="Teacher"/>
         <div id="visual-teacher">
           <p id="teacher-text">Olá mestre!</p>

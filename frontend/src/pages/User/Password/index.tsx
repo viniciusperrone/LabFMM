@@ -15,7 +15,7 @@ function AlterarSenha(){
     <>
       <Header backgroundColor="none"/>
 
-      <Background title="password">
+      <Background title="password" width="none" position="none">
 
         <label htmlFor="usuário" className="label" id="label-password-one">Nome</label>
         <div className="input-password" id="input-password-one">

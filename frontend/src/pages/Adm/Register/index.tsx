@@ -6,7 +6,7 @@ function RegisterAdm(){
   return(
     <>
       <Header backgroundColor="none"></Header>
-      <Background title="home-adm"></Background>
+      <Background title="home-adm" width="none" position="none"></Background>
     </>
 
   )

@@ -17,7 +17,7 @@ function RegisterUser(){
       
         <Header backgroundColor="none"/>
 
-        <Background title="register-user">
+        <Background title="register-user" width="none" position="none">
           <form id="form-user-one">
             <label htmlFor="name" className="label" id="label-first-register">Nome</label>
             <div className="input-register">
