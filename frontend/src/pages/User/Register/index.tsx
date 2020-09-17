@@ -32,7 +32,7 @@ function RegisterUser(){
             <label htmlFor="displine" className="label">Disciplina</label>
             <div className="input-register">
               <img id="icon-discipline-register" src={BookIcon} alt="disciplina"/>
-              <input type="text" className="input-children-register" id="input-register-disci"/>
+              <input type="text" className="input-children-register" id="input-register-discipline"/>
             </div>
           </form>
 
@@ -40,12 +40,12 @@ function RegisterUser(){
             <label htmlFor="" className="label" id="label-second-register">Senha</label>
             <div className="input-register">
               <img className="icon-password-register"src={PasswordIcon} alt="senha"/>
-              <input type="text" className="input-children-register" id="input-register-password"/>
+              <input type="password" className="input-children-register" id="input-register-password"/>
             </div>
             <label htmlFor="" className="label">Confirmar Senha</label>
             <div className="input-register">
               <img className="icon-password-register"src={PasswordIcon} alt="senha"/>
-              <input type="text" className="input-children-register" id="input-register-confirm-password"/>
+              <input type="password" className="input-children-register" id="input-register-confirm-password"/>
             </div>
             <Link to="">
             <button id="botton-create">criar conta</button>

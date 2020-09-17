@@ -6,6 +6,7 @@ import Password from './pages/User/Password';
 
 import RegisterUser from './pages/User/Register';
 import HomeUser from './pages/User/Home';
+import PlusLabs from './pages/User/PlusLabs';
 import AgenderLabs from './pages/User/AgenderLabs';
 import ViewLabs from './pages/User/ViewLabs';
 
@@ -20,6 +21,7 @@ function Routers(){
             <Route path="/register-adm" component={RegisterAdm} />
             <Route path="/password" component={Password}/>
             <Route path="/home-user" component={HomeUser}/>
+            <Route path="/plus-user" component={PlusLabs}/>
             <Route path="/agender-user" component={AgenderLabs}/>
             <Route path="/view-user" component={ViewLabs}/>
             <Route path="/home-adm" component={HomeAdm}/>

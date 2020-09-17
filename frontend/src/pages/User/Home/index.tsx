@@ -24,21 +24,21 @@ function Home(){
           <img id="icon-computer-home-user"src={ComputerIcon} alt="computer"/>
 
           <div id="conteiner-button-home-use">
-            <Link to="/">
+            <Link to="/plus-user">
               <div id="btn-home-user-alocar" className="btns-home-user">
                 <img id="icon-home-user-plus"src={PlusIcon} alt="alocar"/>
                 <p className="text-botton-home-user">alocar laboratório</p>
               </div>
            </Link>
 
-          <Link to="/">
+          <Link to="/view-user">
               <div id="btn-home-user-views" className="btns-home-user">
                 <img id="icon-home-user-search"src={SearchIcon} alt="visualizar"/>
                 <p className="text-botton-home-user">visualizar laboratório</p>
               </div>
           </Link>
 
-           <Link to="/">
+           <Link to="/agender-user">
               <div id="btn-home-user-agendar" className="btns-home-user">
                 <img id="icon-home-user-schedule"src={ScheduleIcon} alt="agendar"/>
                 <p className="text-botton-home-user">agendar laboratório</p>

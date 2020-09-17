@@ -3,11 +3,11 @@ import React from 'react';
 import Header from '../../../components/Header';
 import Background from '../../../components/Background';
 
-function ViewLabs(){
+function PlusLabs(){
   return(
     <>
       <Header backgroundColor="#9871F5"/>
-      <Background title="login" width="none" position="none">
+      <Background title="plus-user" width="none" position="none">
 
         
       </Background>
@@ -15,4 +15,4 @@ function ViewLabs(){
   )
 }
 
-export default ViewLabs;
+export default PlusLabs;
