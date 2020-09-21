@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "nodemon server.ts",
+    "build": "sucrase ./src -d ./dist --transform typescript,imports"
+  },
+  "dependencies": {
+    "@types/node": "^14.11.1",
+    "express": "^4.17.1",
+    "mysql2": "^2.2.2",
+    "nodemon": "^2.0.4",
+    "require-dir": "^1.2.0",
+    "sequelize": "^6.3.5",
+    "sucrase": "^3.15.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3"
+  }
+}
