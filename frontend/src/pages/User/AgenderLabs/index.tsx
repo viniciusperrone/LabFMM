@@ -1,9 +1,9 @@
 import React from 'react';
-import DayPicker from 'react-day-picker';
-import 'react-day-picker/lib/style.css';
 
 import Header from '../../../components/Header';
 import Background from '../../../components/Background';
+
+import SheduleIcon from '../../../assets/images/icons/icon_schedule.svg';
 
 import './style.css';
 
@@ -13,9 +13,10 @@ function AgenderLabs(){
     <>
       <Header backgroundColor="#9871F5"/>
       <Background title="login" width="none" position="none">
-        <div id="conteiner-calendario-agender">
-         <DayPicker />
-        </div>
+        <header id="header-user-agender-labs">
+          <img src={SheduleIcon} alt="" id="img-user-agender-labs"/>
+          <p id="text-header-agender-labs">Agendar laboratórios</p>
+        </header>
       </Background>
     </>
   )

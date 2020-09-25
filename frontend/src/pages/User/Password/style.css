@@ -1,3 +1,32 @@
+@keyframes animacao-button{
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+  }
+}
+
+@keyframes animacao-input{
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+}
 .input-password{
   background-color: var(--color-primary-input);
 
@@ -9,6 +38,11 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+.input-password:hover{
+  animation: animacao-input 1s;
+
 }
 
 #icon-user-password{
@@ -48,6 +82,10 @@
 
   border-radius: 15px;
   background-color: var(--color-primary-button);
+}
+
+#botton-change-password:hover{
+  animation: animacao-button 400ms
 }
 
 /* POSICIONAMENTO */
@@ -100,10 +138,18 @@
   grid-column: 2;
 }
 
-#botton-change-password{
-  grid-row: 7;
+#conteiner-button-password{
+  grid-row: 6/8;
   grid-column: 1/2;
-
+  width: 60vh;
+  height: 100%;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#botton-change-password{
   align-self: center;
   justify-self: center;
+  margin-left: 100%;
 }

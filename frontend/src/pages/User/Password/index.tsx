@@ -40,8 +40,9 @@ function AlterarSenha(){
           <img className="icon-password-password" src={PasswordIcon} alt=""/>
           <input type="password" className="input-children-password" id="input-confirm-password-password"/>
         </div>
-        
-        <button id="botton-change-password">alterar senha</button>         
+        <div id="conteiner-button-password">
+          <button id="botton-change-password">alterar senha</button>
+        </div>         
       
       </Background>
       

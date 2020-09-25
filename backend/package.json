@@ -1,23 +1,26 @@
 {
-  "name": "backend",
+  "name": "backend_2",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "nodemon server.ts",
-    "build": "sucrase ./src -d ./dist --transform typescript,imports"
+    "start": "nodemon src/main.js"
   },
   "dependencies": {
-    "@types/node": "^14.11.1",
-    "express": "^4.17.1",
-    "mysql2": "^2.2.2",
-    "nodemon": "^2.0.4",
-    "require-dir": "^1.2.0",
+    "@koa/cors": "^3.1.0",
+    "boom": "^7.3.0",
+    "fastest-validator": "^1.7.0",
+    "koa": "^2.13.0",
+    "koa-bodyparser": "^4.3.0",
+    "koa-router": "^9.4.0",
     "sequelize": "^6.3.5",
-    "sucrase": "^3.15.0"
+    "sequelize-cli": "^6.2.0",
+    "sqlite3": "^5.0.0"
   },
   "devDependencies": {
-    "prettier": "^2.1.2",
+    "nodemon": "^2.0.4",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.63",
     "typescript": "^4.0.3"
   }
 }

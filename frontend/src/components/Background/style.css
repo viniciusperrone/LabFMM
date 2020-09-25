@@ -31,6 +31,16 @@
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+    "header header"
+    "header header"
+    "nada nada"
+    "nada nada"
+    "nada nada"
+    "nada nada"
+    "footer footer"
+    "footer footer"
+  ;
   justify-content: center;
 
   margin: 0;

@@ -12,6 +12,9 @@ import ViewLabs from './pages/User/ViewLabs';
 
 import RegisterAdm from './pages/Adm/Register';
 import HomeAdm from './pages/Adm/Home';
+import TeacherList from './pages/Adm/TeachersList';
+import LabsList from './pages/Adm/LabsList';
+
 
 function Routers(){
     return(
@@ -25,6 +28,9 @@ function Routers(){
             <Route path="/agender-user" component={AgenderLabs}/>
             <Route path="/view-user" component={ViewLabs}/>
             <Route path="/home-adm" component={HomeAdm}/>
+            <Route path="/adm-labs" component={LabsList}/>
+            <Route path="/adm-teachers" component={TeacherList}/>
+            
         </BrowserRouter>
 
     )
