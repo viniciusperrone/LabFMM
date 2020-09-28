@@ -20,6 +20,11 @@
   color: var(--color-background-secundary-text);
 }
 
+#conteiner-main-agender-labs{
+  grid-area: nada;
+  background-color: lawngreen;
+}
+
 
 
 

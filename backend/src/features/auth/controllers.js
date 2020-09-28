@@ -1,5 +1,6 @@
 const Boom = require('boom')
 const services = require('./services.js')
+const jwt = require('jsonwebtoken')
 
 module.exports = {
   auth: async ctx => {
@@ -8,7 +9,9 @@ module.exports = {
     console.log(user)
 
     if(user){
-      response.body = user
+      response.body = {
+        result: jwt.sign({email: user.email}, 'ok')
+      }
     } else{
       response.body = { result: Boom.badRequest() }
     }  

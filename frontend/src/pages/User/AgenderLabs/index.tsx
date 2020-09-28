@@ -17,6 +17,9 @@ function AgenderLabs(){
           <img src={SheduleIcon} alt="" id="img-user-agender-labs"/>
           <p id="text-header-agender-labs">Agendar laboratórios</p>
         </header>
+        <div id="conteiner-main-agender-labs">
+
+        </div>
       </Background>
     </>
   )
