@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Header from '../../../components/Header';
 import Background from '../../../components/Background';
@@ -7,7 +7,9 @@ import ViewIcon from '../../../assets/images/icons/icon_view.svg';
 
 import './style.css';
 
-function ViewLabs(){
+const ViewLabs:  React.FC = () => {
+
+  const [laboratory, setLaboratory] = useState('');
   return(
     <>
       <Header backgroundColor="#9871F5"/>
@@ -18,7 +20,7 @@ function ViewLabs(){
         </header>
         <label htmlFor="email" className="label">Laboratório</label>
         <div id="input-user-view-labs-search" className="input-login">
-          <input type="text" className="input-children"/>
+          <input value={laboratory} type="text" className="input-children" onChange={e => setLaboratory(e.target.value)}/>
         </div>
         <button id="search-user-view-labs">buscar</button>
 

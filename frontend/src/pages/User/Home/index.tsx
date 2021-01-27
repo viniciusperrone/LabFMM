@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 
 import Header from '../../../components/Header';
@@ -14,7 +14,8 @@ import LogoutIcon from '../../../assets/images/icons/icon_logout.svg';
 
 import './style.css';
 
-function Home(){
+const Home: React.FC = () => {
+  
   return(
     <>
       <Header backgroundColor="#9871F5"/>
@@ -59,5 +60,6 @@ function Home(){
     </>
   )
 }
+
 
 export default Home;

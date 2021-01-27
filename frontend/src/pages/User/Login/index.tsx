@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 // import {ErrorMessage, Formik, Form, Field} from 'formilk'
 
@@ -12,7 +12,18 @@ import PasswordIcon from '../../../assets/images/icons/icon_password.svg';
 
 import './style.css';
 
-function Login(){
+const Login: React.FC = () => {
+
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
+
+  function AuthUser() {
+    if(email==''&&password==''){
+      alert('email and password are invalid ');
+      
+    }
+  }
+
   return(
     <>
       <Header backgroundColor="none"/>
@@ -28,17 +39,17 @@ function Login(){
             <label htmlFor="email" className="label">Email</label>
             <div id="input-login-email" className="input-login">
               <img id="image-email-login"src={EmailIcon} alt="email"/>
-              <input type="text" id="input-children-email" className="input-children"/>
+              <input value={email} type="text" id="input-children-email" className="input-children" onChange={e => setEmail(e.target.value)}/>
             </div>
             <label htmlFor="password" className="label">Senha</label>
             <div id="input-login-password" className="input-login">
               <img id="image-email-password"src={PasswordIcon} alt="password"/>
-              <input type="password" id="input-children-password" className="input-children"/>
+              <input value={password} type="password" id="input-children-password" className="input-children" onChange={e => setPassword(e.target.value)}/>
             </div>
             
 
-            <Link to="/home-user">
-              <button id="text-go">entrar</button>
+            <Link to="/" >
+              <button id="text-go" onClick={() => AuthUser()}>entrar</button>
             </Link>
 
             <Link to="/register-user">
