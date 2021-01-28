@@ -1,14 +1,12 @@
 import React, {Component} from 'react';
 
 import './style.css';
+import { BodyMain } from './style';
 
-class Body extends Component{
-  render(){
-    return(
-      <div id="body-main">
-      </div>
-    )
-  }
+const Body: React.FC = () => {
+  return(
+    <div id="body-main">
+    </div>
+  )
 }
-
 export default Body;

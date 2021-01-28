@@ -1,6 +1,7 @@
 import React from 'react';
 
 import './style.css';
+import { BackgroundMain, BodyMain, FooterText} from './style';
 
 interface BackgroundProps{
   title: string;
@@ -10,11 +11,13 @@ interface BackgroundProps{
 
 const Background: React.FC<BackgroundProps> = (props) => {
   return(
-    <div id="background" >
-      <div id="body-main" style={{width: `${props.width}` ,justifySelf: `${props.position}`}}>{props.children}</div>
+    <BackgroundMain >
+      <BodyMain style={{width: `${props.width}` ,justifySelf: `${props.position}`}}>
+        {props.children}
+      </BodyMain>
       
-      <p id="footer-text">Fundação Matias Machline</p>
-    </div>
+      <FooterText>Fundação Matias Machline</FooterText>
+    </BackgroundMain>
 )
 }
 
