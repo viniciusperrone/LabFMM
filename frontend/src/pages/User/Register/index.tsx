@@ -11,7 +11,7 @@ import UserIcon from '../../../assets/images/icons/icon_user.svg';
 
 import './style.css';
 
-function RegisterUser(){
+const RegisterUser: React.FC = () => {
   return(
       <>
       

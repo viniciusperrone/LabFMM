@@ -9,7 +9,7 @@ import PasswordIcon from '../../../assets/images/icons/icon_password.svg';
 
 import './style.css';
 
-function AlterarSenha(){
+const AlterarSenha: React.FC = () => {
 
   return(
     <>

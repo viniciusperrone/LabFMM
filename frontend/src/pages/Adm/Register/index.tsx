@@ -10,7 +10,7 @@ import UserIcon from '../../../assets/images/icons/icon_user.svg';
 
 import './style.css';
 
-function RegisterAdm(){
+const RegisterAdm: React.FC = () => {
   return(
     <>
       <Header backgroundColor="none"></Header>
