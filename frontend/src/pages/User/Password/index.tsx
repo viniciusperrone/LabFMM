@@ -7,7 +7,7 @@ import EmailIcon from '../../../assets/images/icons/email_icon.svg';
 import UserIcon from '../../../assets/images/icons/icon_user.svg';
 import PasswordIcon from '../../../assets/images/icons/icon_password.svg';
 
-import './style.css';
+import { Password, PasswordInput, Label, ConteinerButton, Button } from './styled';
 
 const AlterarSenha: React.FC = () => {
 
@@ -17,32 +17,37 @@ const AlterarSenha: React.FC = () => {
 
       <Background title="password" width="none" position="none">
 
-        <label htmlFor="usuário" className="label" id="label-password-one">Nome</label>
-        <div className="input-password" id="input-password-one">
-          <img id="icon-user-password"src={UserIcon} alt="usuário"/>
-          <input type="text" className="input-children-password" id="input-password-user"/>
-        </div>
+        <Label style={{ gridRow: `2`, gridColumn: `1` }} id="label-password-one">Nome</Label>
 
-        <label htmlFor="email" className="label" id="label-password-two">Email</label>
-        <div className="input-password" id="input-password-two">
-          <img id="icon-email-password"src={EmailIcon} alt="email"/>
-          <input type="text" className="input-children-password" id="input-password-email"/>
-        </div>
+        <Password style={{ gridRow: `3`, gridColumn: `1`}}>
+          <img style={{ width: `30px`, height: `30px`, marginLeft: `5%`}} src={UserIcon} alt="usuário"/>
+          <PasswordInput type="text" />
+        </Password>
 
-        <label htmlFor="nova senha" className="label" id="label-password-three">Nova Senha</label>
-        <div className="input-password" id="input-password-three">
-          <img className="icon-password-password" src={PasswordIcon} alt=""/>
-          <input type="password" className="input-children-password" id="input-new-password-pass"/>
-        </div>
+        <Label style={{ gridRow: `4`, gridColumn: `1` }}>Email</Label>
 
-        <label htmlFor="confirmar senha" className="label" id="label-password-four">Confirmar Senha</label>
-        <div className="input-password" id="input-password-four">
-          <img className="icon-password-password" src={PasswordIcon} alt=""/>
-          <input type="password" className="input-children-password" id="input-confirm-password-password"/>
-        </div>
-        <div id="conteiner-button-password">
-          <button id="botton-change-password">alterar senha</button>
-        </div>         
+        <Password style={{ gridRow: `5`, gridColumn: `1`}}>
+          <img style={{ width: `30px`, height: `30px`, marginLeft: `5%`}} src={EmailIcon} alt="email"/>
+          <PasswordInput type="text" />
+        </Password>
+
+        <Label style={{ gridRow: `2`, gridColumn: `2` }}>Nova Senha</Label>
+
+        <Password style={{ gridRow: `3`, gridColumn: `2`}}>
+          <img style={{ width: `26px`, height: `26px`, marginLeft: `5%`}} src={PasswordIcon} alt=""/>
+          <PasswordInput type="password" />
+        </Password>
+
+        <Label style={{ gridRow: `4`, gridColumn: `2` }}>Confirmar Senha</Label>
+
+        <Password style={{ gridRow: `5`, gridColumn: `2`}}>
+          <img style={{ width: `26px`, height: `26px`, marginLeft: `5%`}} src={PasswordIcon} alt=""/>
+          <PasswordInput type="password" />
+        </Password>
+
+        <ConteinerButton id="conteiner-button-password">
+          <Button>alterar senha</Button>
+        </ConteinerButton>         
       
       </Background>
       

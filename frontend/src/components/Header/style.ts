@@ -21,7 +21,14 @@ export const HeaderMain = styled.div`
   font: 400 3rem Revalia;
 `;
 
-export const ImageLogo = styled.div``;
+export const ImageLogo = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 80px;
+  width: 82px;
+`;
 
 export const FirstText = styled.p`
   color: var(--color-background-primary-text);

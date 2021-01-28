@@ -27,46 +27,6 @@
     transform: translateX(10px);
   }
 }
-.input-password{
-  background-color: var(--color-primary-input);
-
-  width: 25vw;
-  height: 5vh;
-
-  border-radius: 15px;
-
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-.input-password:hover{
-  animation: animacao-input 1s;
-
-}
-
-#icon-user-password{
-  width: 30px;
-  height: 30px;
-
-  margin-left: 5%;
-
-}
-
-#icon-email-password{
-  width: 30px;
-  height: 30px;
-
-  margin-left: 5%;
-}
-
-.icon-password-password{
-  width: 26px;
-  height: 26px;
-
-  margin-left: 5%;
-}
-
 .input-children-password{
   width: 80%;
   height: 100%;
@@ -90,53 +50,8 @@
 
 /* POSICIONAMENTO */
 
-.input-password{
-  margin-left: 10%;
-}
-.label{
-  margin-left: 15%;
-}
 
-#label-password-one{
-  grid-row: 2;
-  grid-column: 1;
 
-}
-
-#label-password-two{
-  grid-row: 4;
-  grid-column: 1;
-}
-
-#label-password-three{
-  grid-row: 2;
-  grid-column: 2;
-}
-
-#label-password-four{
-  grid-row: 4;
-  grid-column: 2;
-}
-
-#input-password-one{
-  grid-row: 3;
-  grid-column: 1;
-}
-
-#input-password-two{
-  grid-row: 5;
-  grid-column: 1;
-}
-
-#input-password-three{
-  grid-row: 3;
-  grid-column: 2;
-}
-
-#input-password-four{
-  grid-row: 5;
-  grid-column: 2;
-}
 
 #conteiner-button-password{
   grid-row: 6/8;

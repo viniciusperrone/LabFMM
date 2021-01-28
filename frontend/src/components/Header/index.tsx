@@ -2,7 +2,7 @@ import React from 'react';
 
 import LogoFMM from '../../assets/images/icons/FMM.svg';
 
-import './style.css';
+import { HeaderConteiner, HeaderMain, ImageLogo, FirstText, SecondText} from './style';
 
 interface HeaderProps {
   backgroundColor: string;
@@ -10,15 +10,18 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ backgroundColor }) => {
   return(
-    <div id="header">
-      <div id="header-main" style={{ background: backgroundColor }}>
-        <img id="logo-fmm"src={LogoFMM} alt="FMM"/>
+    <HeaderConteiner>
+      <HeaderMain style={{ background: backgroundColor }}>
+        <ImageLogo>
+          <img src={LogoFMM} alt="FMM" style={{ width: 82, height: 80}}/>
+        </ImageLogo>
         
-        <p id="header-first-text">Lab</p>
+        
+        <FirstText>Lab</FirstText>
 
-        <p id="header-second-text">FMM</p>
-      </div>
-    </div>  
+        <SecondText>FMM</SecondText>
+      </HeaderMain>
+    </HeaderConteiner>  
   )
 }
 

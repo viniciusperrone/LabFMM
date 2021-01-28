@@ -8,31 +8,33 @@ import ComputerIcon from '../../../assets/images/icons/icon_computer.svg';
 import LabsIcon from '../../../assets/images/icons/labs_icon.svg';
 import ProfIcon from '../../../assets/images/icons/icon__teacher.svg';
 
-import './style.css';
+import { HomeAdm, ConteinerInside, Button, TextBtns} from './style';
 
 const Home = () => {
   return( 
     <>
       <Header backgroundColor="#9871F5"/>
       <Background title="home-adm" width="45vw" position="center">
-      <div id="home-image-computer-adm">
+      <HomeAdm>
           <img id="icon-computer-home-user"src={ComputerIcon} alt="computer"/>
 
-          <div id="conteiner-btns-home-adm">
+          <ConteinerInside>
             <Link to="/adm-labs">
-              <div id="btn-home-adm-view-labs" className="btns-home-adm">
-                <img id="image-labs-home-user" src={LabsIcon} alt="labs"/>
-                <p className="text-btns-home-adm">laboratórios</p>
-              </div>
+              <Button>
+                <img src={LabsIcon} alt="labs" style={{width: 30, height: 30, marginLeft: 5}}/>
+                <TextBtns>laboratórios</TextBtns>
+              </Button>
             </Link>
+
             <Link to="/adm-teachers">
-              <div id="btn-home-adm-view-teacher" className="btns-home-adm">
-                <img id="image-teacher-home-user"src={ProfIcon} alt="teacher"/>
-                <p className="text-btns-home-adm">professores</p>
-              </div>
+              <Button>
+                <img src={ProfIcon} alt="teacher" style={{width: 30, height: 30, marginLeft: 5}}/>
+                <TextBtns>professores</TextBtns>
+              </Button>
             </Link>
-          </div>
-        </div>
+            
+          </ConteinerInside>
+        </HomeAdm>
       </Background>
     </>
   )

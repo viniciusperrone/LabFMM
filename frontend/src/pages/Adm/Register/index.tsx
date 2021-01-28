@@ -10,43 +10,58 @@ import UserIcon from '../../../assets/images/icons/icon_user.svg';
 
 import './style.css';
 
+import { FirstForm, SecondForm, InputConteiner, InputInside, Button} from './style';
+
 const RegisterAdm: React.FC = () => {
   return(
     <>
       <Header backgroundColor="none"></Header>
       <Background title="home-adm" width="none" position="none">
-      <form id="form-adm-one">
+
+      <FirstForm>
+            
             <label htmlFor="name" className="label" id="label-first-register-adm">Nome</label>
-            <div className="input-register-adm">
-              <img id="icon-user-register-adm" src={UserIcon} alt="usuário"/>
-              <input type="text" className="input-children-register-adm" id="input-register-adm-name"/>
-            </div>
+            
+            <InputConteiner>
+              <img src={UserIcon} alt="usuário" style={{width: 30, height: 30, marginLeft: 5}}/>
+              <InputInside type="text"/>
+            </InputConteiner>
+
             <label htmlFor="email" className="label">Email</label>
-            <div className="input-register-adm">
-              <img id="icon-email-register-adm" src={EmailIcon} alt="email"/>
-              <input type="text" className="input-children-register-adm" id="input-register-adm-email"/>
-            </div>
+            
+            <InputConteiner>
+              <img src={EmailIcon} alt="email" style={{width: 30, height: 30, marginLeft: 5}}/>
+              <InputInside type="text"/>
+            </InputConteiner>
 
             <Link to="">
-              <button id="botton-back-register-adm">voltar</button>
+              <Button style={{ backgroundColor: `var(--color-primary-button)`}}>voltar</Button>
             </Link>
-          </form>
 
-          <form id="form-adm-second">
+        </FirstForm>
+
+          <SecondForm>
+
             <label htmlFor="" className="label" id="label-second-register-adm">Senha</label>
-            <div className="input-register-adm">
-              <img className="icon-password-register-adm"src={PasswordIcon} alt="senha"/>
-              <input type="password" className="input-children-register-adm" id="input-register-adm-password"/>
-            </div>
+            
+            <InputConteiner>
+              <img src={PasswordIcon} alt="senha" style={{width: 26, height: 26, marginLeft: 5}}/>
+              <InputInside type="password"/>
+            </InputConteiner>
+
             <label htmlFor="" className="label">Confirmar Senha</label>
-            <div className="input-register-adm">
-              <img className="icon-password-register-adm"src={PasswordIcon} alt="senha"/>
-              <input type="password" className="input-children-register-adm" id="input-register-adm-confirm-password"/>
-            </div>
+
+            <InputConteiner>
+              <img src={PasswordIcon} alt="senha" style={{width: 26, height: 26, marginLeft: 5}}/>
+              <InputInside type="password"/>
+            </InputConteiner>
+
             <Link to="">
-            <button id="botton-create-adm">criar conta</button>
+              <Button style={{ backgroundColor: `var(--color-secundary-button)`}}>criar conta</Button>
             </Link>
-          </form>
+
+          </SecondForm>
+
       </Background>
     </>
 

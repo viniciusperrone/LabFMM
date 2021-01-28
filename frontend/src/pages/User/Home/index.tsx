@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 
 import Header from '../../../components/Header';
@@ -12,7 +12,7 @@ import LogoutIcon from '../../../assets/images/icons/icon_logout.svg';
 
 
 
-import './style.css';
+import { BodyConteiner, ButtonConteiner, Button, TextButton} from './style';
 
 const Home: React.FC = () => {
   
@@ -21,40 +21,43 @@ const Home: React.FC = () => {
       <Header backgroundColor="#9871F5"/>
       
       <Background title="home" width="45vw" position="center">
-        <div id="home-image-computer">
-          <img id="icon-computer-home-user"src={ComputerIcon} alt="computer"/>
 
-          <div id="conteiner-button-home-use">
+        <BodyConteiner>
+          <img src={ComputerIcon} alt="computer" style={{width: `100px`, height: `100px`, alignSelf: `center`, gridColumn: `1/2`, gridRow: `3`}}/>
+
+          <ButtonConteiner>
+
             <Link to="/plus-user">
-              <div id="btn-home-user-alocar" className="btns-home-user">
-                <img id="icon-home-user-plus"src={PlusIcon} alt="alocar"/>
-                <p className="text-botton-home-user">alocar laboratório</p>
-              </div>
+              <Button style={{gridColumn: `1`, gridRow: `2`}}>
+                <img src={PlusIcon} alt="alocar" style={{width: `30px`, height: `30px`, marginLeft: `5px`}}/>
+                <TextButton>alocar laboratório</TextButton>
+              </Button>
            </Link>
 
           <Link to="/view-user">
-              <div id="btn-home-user-views" className="btns-home-user">
-                <img id="icon-home-user-search"src={SearchIcon} alt="visualizar"/>
-                <p className="text-botton-home-user">visualizar laboratório</p>
-              </div>
+              <Button style={{gridColumn: `1`, gridRow: `4`}}>
+                <img src={SearchIcon} alt="visualizar" style={{width: `28px`, height: `28px`, marginLeft: `5px`}}/>
+                <TextButton>visualizar laboratório</TextButton>
+              </Button>
           </Link>
 
            <Link to="/agender-user">
-              <div id="btn-home-user-agendar" className="btns-home-user">
-                <img id="icon-home-user-schedule"src={ScheduleIcon} alt="agendar"/>
-                <p className="text-botton-home-user">agendar laboratório</p>
-              </div>
+              <Button style={{gridColumn: `2`, gridRow: `2`}}>
+                <img src={ScheduleIcon} alt="agendar" style={{width: `30px`, height: `30px`, marginLeft: `5px`}}/>
+                <TextButton>agendar laboratório</TextButton>
+              </Button>
           </Link>
 
            <Link to="/">
-              <div id="btn-home-user-sair" className="btns-home-user">
-                <img id="icon-home-user-logout"src={LogoutIcon} alt="sair"/>
-                <p className="text-botton-home-user">sair</p>
-              </div>
+              <Button style={{gridColumn: `2`, gridRow: `4`}}>
+                <img src={LogoutIcon} alt="sair" style={{width: `28px`, height: `28px`, marginLeft: `5px`}}/>
+                <TextButton>sair</TextButton>
+              </Button>
            </Link>
-          </div>
+
+          </ButtonConteiner>
           
-        </div>
+        </BodyConteiner>
 
       </Background>
     </>
