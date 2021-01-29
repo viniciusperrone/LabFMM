@@ -1,19 +1,31 @@
 import styled, { keyframes }  from 'styled-components';
 
-export const ConteinerImg = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  height: 27vh;
-  width: 19vw;
-
-  grid-row: 1/6; 
-  grid-column: 1;
-
-  img{
-    height: 100%;
-    width: 100%;
+const animationInput = keyframes`
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+  40% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+  80% {
+    -webkit-transform: translateX(10px);
+    transform: translateX(10px);
+  }
+`;
+const animationButton = keyframes`
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+  80% {
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
   }
 
 `;
@@ -26,30 +38,6 @@ export const ConteinerFooter = styled.div`
 
   align-items: center;
   justify-content: center;
-
-  img{
-    height: 31px;
-    width: 37px;
-  }
-  p{
-    font: 400 3rem Reem Kufi;
-    margin-right: 10px;
-  }
-  input{
-    border: none;
-    color: var(--color-background-primary-text);
-    font: 400 2rem Skranji;
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  button{
-    border: none;
-    color: var(--color-primary-button-text);
-  }
-
 `;
 
 export const FormSignIn = styled.form`
@@ -62,42 +50,13 @@ export const FormSignIn = styled.form`
   align-items: center;
   justify-content: center;
 
-  div{
-    background-color: var(--color-primary-input);
-
-    width: 25vw;
-    height: 5vh;
-
-    border-radius: 15px;
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  div > input{
-    width: 80%;
-    height: 100%;
-
-    margin-left: 2.5%;
-
-    background-color: var(--color-primary-input);
-  }
-
-  label {
-    width: 300px;
-    font: 400 2.25rem Skranji;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-
   input{
-    border: none;
-    color: var(--color-background-primary-text);
-    font: 400 2rem Skranji;
+  border: none;
+  color: var(--color-background-primary-text);
+  font: 400 2rem Skranji;
   }
 
-  a {
+  a{
     text-decoration: none;
   }
 
@@ -105,37 +64,45 @@ export const FormSignIn = styled.form`
     border: none;
     color: var(--color-primary-button-text);
   }
-
+  button a{
+  color: var(--color-primary-button-text);
+}
 `;
 
-export const ImgEmail = styled.div`
+export const InputConteiner = styled.div`
+  background-color: var(--color-primary-input);
+
+  width: 25vw;
+  height: 5vh;
+
+  border-radius: 15px;
+
   display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  
-  img{
-    width: 30px;
-    height: 30px;
 
-    margin-left: 5%;
+  &:hover{
+    animation: ${animationInput} 1s;
   }
-
-`;
-export const ImgPassword = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  img{
-    width: 26px;
-    height: 26px;
-
-    margin-left: 5%;
-  }
-  
 `;
 
-export const ButtonIn = styled.button`
+export const Input = styled.input`
+  width: 80%;
+  height: 100%;
+
+  margin-left: 2.5%;
+
+  background-color: var(--color-primary-input);
+`;
+
+export const Label = styled.label`
+  width: 300px;
+  font: 400 2.25rem Skranji;
+  margin-top: 10px;
+  margin-bottom: 10px;
+`;
+
+export const Button = styled.button`
   height: 6vh;
   width: 16vw;
 
@@ -147,13 +114,13 @@ export const ButtonIn = styled.button`
   text-align: center;
   font: 400 2.25rem Skranji;
 
-  a {
-    color: var(--color-primary-button-text);
+  &:hover{
+    animation: ${animationButton} 400ms;
   }
 
 `;
 
-export const LinkRegister = styled.p`
+export const LinkSignUp = styled.p`
   width: 200px;
   text-decoration: none;
   margin-top: 10%;
@@ -161,3 +128,4 @@ export const LinkRegister = styled.p`
 
   color: var(--color-background-internal-text);
 `;
+

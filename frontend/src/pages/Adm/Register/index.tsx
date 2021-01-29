@@ -8,7 +8,6 @@ import EmailIcon from '../../../assets/images/icons/email_icon.svg';
 import PasswordIcon from '../../../assets/images/icons/icon_password.svg';
 import UserIcon from '../../../assets/images/icons/icon_user.svg';
 
-import './style.css';
 
 import { FirstForm, SecondForm, InputConteiner, InputInside, Button} from './style';
 
@@ -20,17 +19,17 @@ const RegisterAdm: React.FC = () => {
 
       <FirstForm>
             
-            <label htmlFor="name" className="label" id="label-first-register-adm">Nome</label>
+            <label>Nome</label>
             
             <InputConteiner>
-              <img src={UserIcon} alt="usuário" style={{width: 30, height: 30, marginLeft: 5}}/>
+              <img src={UserIcon} alt="usuário" style={{width: 30, height: 30, marginLeft: `5%`}}/>
               <InputInside type="text"/>
             </InputConteiner>
 
             <label htmlFor="email" className="label">Email</label>
             
             <InputConteiner>
-              <img src={EmailIcon} alt="email" style={{width: 30, height: 30, marginLeft: 5}}/>
+              <img src={EmailIcon} alt="email" style={{width: 30, height: 30, marginLeft: `5%`}}/>
               <InputInside type="text"/>
             </InputConteiner>
 
@@ -42,17 +41,17 @@ const RegisterAdm: React.FC = () => {
 
           <SecondForm>
 
-            <label htmlFor="" className="label" id="label-second-register-adm">Senha</label>
+            <label>Senha</label>
             
             <InputConteiner>
-              <img src={PasswordIcon} alt="senha" style={{width: 26, height: 26, marginLeft: 5}}/>
+              <img src={PasswordIcon} alt="senha" style={{width: 26, height: 26, marginLeft: `5%`}}/>
               <InputInside type="password"/>
             </InputConteiner>
 
-            <label htmlFor="" className="label">Confirmar Senha</label>
+            <label>Confirmar Senha</label>
 
             <InputConteiner>
-              <img src={PasswordIcon} alt="senha" style={{width: 26, height: 26, marginLeft: 5}}/>
+              <img src={PasswordIcon} alt="senha" style={{width: 26, height: 26, marginLeft: `5%`}}/>
               <InputInside type="password"/>
             </InputConteiner>
 

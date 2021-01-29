@@ -16,7 +16,7 @@ const Home = () => {
       <Header backgroundColor="#9871F5"/>
       <Background title="home-adm" width="45vw" position="center">
       <HomeAdm>
-          <img id="icon-computer-home-user"src={ComputerIcon} alt="computer"/>
+          <img src={ComputerIcon} alt="computer" style={{width: `100px`, height: `100px`, alignSelf: `center`, gridColumn: `1/2`, gridRow: `3`}}/>
 
           <ConteinerInside>
             <Link to="/adm-labs">

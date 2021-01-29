@@ -37,4 +37,28 @@ export default createGlobalStyle`
    font: 400 2.25rem Skranji;
   }
 
+  label{
+    width: 300px;
+    font: 400 2.25rem Skranji;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  input{
+  border: none;
+  color: var(--color-background-primary-text);
+  font: 400 2rem Skranji;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+  button{
+    border: none;
+    color: var(--color-primary-button-text);
+  }
+  button a{
+  color: var(--color-primary-button-text);
+}
+
 `;
