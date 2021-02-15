@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './style.css';
 import { BodyMain } from './style';
 
 const Body: React.FC = () => {
