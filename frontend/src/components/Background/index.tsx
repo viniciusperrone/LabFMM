@@ -1,6 +1,5 @@
 import React from 'react';
 
-import './style.css';
 import { BackgroundMain, BodyMain, FooterText} from './style';
 
 interface BackgroundProps{

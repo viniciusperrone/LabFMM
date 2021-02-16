@@ -2,29 +2,24 @@ import { Router, Request, Response } from 'express';
 
 const router = Router();
 
-router.get('/register-user', (req: Request, res: Response) => {
-  res.send('Page User Register')
+router.get('/register-use', ( req: Request, res: Response) => {
+  res.send('Page register user');
 });
 
-router.get('/password', (req: Request, res: Response) => {
-  res.send('Password')
+router.get('/home-user', ( req: Request, res: Response) => {
+  res.send('Page initial');
 });
 
-router.get('/home-user', (req: Request, res: Response) => {
-  res.send('Page User Home')
+router.get('/plus-user', ( req: Request, res: Response) => {
+  res.send('Page plus user');
 });
 
-router.get('/plus-user', (req: Request, res: Response) => {
-  res.send('Page User Plus')
+router.get('/agender-user', ( req: Request, res: Response) => {
+  res.send('Page agender user');
 });
 
-router.get('/agender-user', (req: Request, res: Response) => {
-  res.send('Page User Agender')
-});
-
-router.get('/view-user', (req: Request, res: Response) => {
-  res.send('Page User View')
+router.get('/view-user', ( req: Request, res: Response) => {
+  res.send('Page view user');
 });
 
 export default router;
-

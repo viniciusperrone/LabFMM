@@ -1,24 +1,29 @@
-import express, { Response, Request} from 'express';
+import express from 'express';
+
 import bodyParser from 'body-parser';
 
-import dotenv from 'dotenv';
+import RouterGlobal from '../routes/global';
+import RouterUser from '../routes/user';
+import RouterAdm from '../routes/admin';
 
-import RouterAdm from '../routes/Admin';
-import RouterUser from '../routes/User';
+import { variables } from '../../../utils/environment';
 
 const app = express();
 
-dotenv.load();
+// Talking data and converting them to json
 
-const port = process.env.NODE_ENV_APP_PORT_SERVER;
+app.use(bodyParser.json);
 
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false}));
+app.use(bodyParser.urlencoded( { extended: false } ));
 
-app.use('/', RouterAdm);
+// Talking all routes
+
+app.use('/', RouterGlobal);
 app.use('/', RouterUser);
+app.use('/', RouterAdm);
 
-app.listen(port, () => {
-  console.log(`Server running on PORT ${port}`)
-});
+// Starting server
 
+app.listen(variables.port, () => {
+  console.log('Server running on port ' + variables.port + '!')
+})
