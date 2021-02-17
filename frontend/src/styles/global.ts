@@ -15,7 +15,9 @@ export default createGlobalStyle`
     --color-primary-button-text: #FFFCFC;
     --color-secundary-button: #D54444;
     --color-tertiary-button: #DD6F6F;
-     --color-background-header: #9871F5;
+    --color-background-header: #9871F5;
+    --color-background-modal-header: #2c2c2c;
+    --color-inside-modal-header: #e9e9e9;
   }
 
   *{

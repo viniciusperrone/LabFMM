@@ -9,6 +9,7 @@ import HomeUser from './pages/User/Home';
 import PlusLabs from './pages/User/PlusLabs';
 import AgenderLabs from './pages/User/AgenderLabs';
 import ViewLabs from './pages/User/ViewLabs';
+import Test from './pages/Test';
 
 import RegisterAdm from './pages/Adm/Register';
 import HomeAdm from './pages/Adm/Home';
@@ -30,6 +31,8 @@ function Routers(){
             <Route path="/home-adm" component={HomeAdm}/>
             <Route path="/adm-labs" component={LabsList}/>
             <Route path="/adm-teachers" component={TeacherList}/>
+
+            <Route path="/test" component={Test}/>
             
         </BrowserRouter>
 

@@ -1,4 +1,5 @@
 import React from 'react';
+// import Calendar from 'react-calendar';
 
 import Header from '../../../components/Header';
 import Background from '../../../components/Background';
@@ -18,7 +19,7 @@ const AgenderLabs: React.FC = () => {
           <p>Agendar laboratórios</p>
         </HeaderLabs>
         <ConteinerMain>
-
+          {/* <Calendar /> */}
         </ConteinerMain>
       </Background>
     </>
