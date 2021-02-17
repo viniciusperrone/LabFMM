@@ -6,12 +6,14 @@ import { HeaderConteiner, HeaderMain, ImageLogo, FirstText, SecondText} from './
 
 interface HeaderProps {
   backgroundColor: string;
+  height: string;
+  zIndex: string;
 }
 
-const Header: React.FC<HeaderProps> = ({ backgroundColor }) => {
+const Header: React.FC<HeaderProps> = ( props ) => {
   return(
     <HeaderConteiner>
-      <HeaderMain style={{ background: backgroundColor }}>
+      <HeaderMain style={{ background: props.backgroundColor, height: props.height, zIndex: Number(props.zIndex) }}>
         <ImageLogo>
           <img src={LogoFMM} alt="FMM" style={{ width: 82, height: 80}}/>
         </ImageLogo>

@@ -4,8 +4,13 @@ export const BodyConteiner = styled.div`
   grid-row: 1/8;
   grid-column: 1/2;
 
+  width: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
+
+  border-radius: 15px;
+  background: var(--color-background-internal);
 
   width: 45vw;
   

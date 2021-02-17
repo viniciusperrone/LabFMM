@@ -15,7 +15,7 @@ const PlusLabs: React.FC = () =>{
 
   return(
     <>
-      <Header backgroundColor="#9871F5"/>
+      <Header backgroundColor="#9871F5" height="145px" zIndex= "14"/>
       <Background title="plus-user" width="none" position="none">
        
         <HeaderPlus>

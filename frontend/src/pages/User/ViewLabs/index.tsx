@@ -13,7 +13,7 @@ const ViewLabs:  React.FC = () => {
   const [laboratory, setLaboratory] = useState('');
   return(
     <>
-      <Header backgroundColor="#9871F5"/>
+      <Header backgroundColor="#9871F5" height="145px" zIndex= "14"/>
       <Background title="login" width="none" position="none">
         <HeaderLabs>
           <img src={ViewIcon} alt="view" style={{width: `100px`, height: `100px`}}/>

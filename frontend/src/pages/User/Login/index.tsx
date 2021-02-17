@@ -1,9 +1,10 @@
-import React, { useState } from 'react';
-import {Link} from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 // import {ErrorMessage, Formik, Form, Field} from 'formilk'
 
 import Background from '../../../components/Background';
 import Header from '../../../components/Header';
+import LinkPassword from '../../../components/LinkPassoword';
 
 import LogoTeacher from '../../../assets/images/icons/icon_teacher.svg';
 import LogoHeart from '../../../assets/images/icons/purple-heart.svg';
@@ -18,17 +19,26 @@ const Login: React.FC = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const [click, setClick] = useState(false);
+
+  useEffect(() => {
+    if(email == '' && password == '' && click == true){
+      setClick(false);
+    }
+
+  }, [email, click, password])
 
   function AuthUser() {
-    if(email==''&&password==''){
-      alert('email and password are invalid ');
+    if(email != '' && password != ''){
+      setClick(true);
       
     }
+    return click;
   }
 
   return(
     <>
-      <Header backgroundColor="none"/>
+      <Header backgroundColor="none" height="none" zIndex="none"/>
 
       <Background title="login" width="none" position="none">
         <img 
@@ -105,7 +115,8 @@ const Login: React.FC = () => {
             <Link to="/register-user">
               <LinkSignUp>cadastre-se!</LinkSignUp>
             </Link>
-
+            { click && <LinkPassword /> }
+      
         </FormSignIn>
         
       </Background>

@@ -11,7 +11,7 @@ import { HeaderMain } from './style';
 const LabsList = () => {
   return(
     <>
-      <Header backgroundColor="#9871F5"/>
+      <Header backgroundColor="#9871F5" height="145px" zIndex= "14"/>
       
       <Background title="home" width="none" position="none">
         <HeaderMain>

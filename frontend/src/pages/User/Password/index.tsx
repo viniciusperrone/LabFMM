@@ -13,7 +13,7 @@ const AlterarSenha: React.FC = () => {
 
   return(
     <>
-      <Header backgroundColor="none"/>
+      <Header backgroundColor="none" height="none" zIndex="none"/>
 
       <Background title="password" width="none" position="none">
 

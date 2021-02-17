@@ -13,9 +13,9 @@ import { HomeAdm, ConteinerInside, Button, TextBtns} from './style';
 const Home = () => {
   return( 
     <>
-      <Header backgroundColor="#9871F5"/>
+      <Header backgroundColor="#9871F5" height="145px" zIndex= "14"/>
       <Background title="home-adm" width="45vw" position="center">
-      <HomeAdm>
+      <HomeAdm style={{ zIndex: Number(`16`)}}>
           <img src={ComputerIcon} alt="computer" style={{width: `100px`, height: `100px`, alignSelf: `center`, gridColumn: `1/2`, gridRow: `3`}}/>
 
           <ConteinerInside>

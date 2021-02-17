@@ -14,7 +14,7 @@ import { FirstForm, SecondForm, InputConteiner, InputInside, Button} from './sty
 const RegisterAdm: React.FC = () => {
   return(
     <>
-      <Header backgroundColor="none"></Header>
+      <Header backgroundColor="none" height="none" zIndex="none"></Header>
       <Background title="home-adm" width="none" position="none">
 
       <FirstForm>

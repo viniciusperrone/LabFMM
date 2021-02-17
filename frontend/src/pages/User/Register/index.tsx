@@ -15,7 +15,7 @@ const RegisterUser: React.FC = () => {
   return(
       <>
       
-        <Header backgroundColor="none"/>
+        <Header backgroundColor="none" height="none" zIndex="none"/>
 
         <Background title="register-user" width="none" position="none">
           

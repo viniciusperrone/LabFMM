@@ -16,6 +16,8 @@ export const BodyMain = styled.div`
   border-radius: 15px;
   background: var(--color-background-internal);
 
+  z-index: 15;
+
   display: grid;
   grid-template-rows: repeat(8, 1fr);
   grid-template-columns: 1fr 1fr;

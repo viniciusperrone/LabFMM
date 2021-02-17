@@ -11,7 +11,7 @@ import { HeaderLabs, ConteinerMain} from './style';
 const AgenderLabs: React.FC = () => { 
   return( 
     <>
-      <Header backgroundColor="#9871F5"/>
+      <Header backgroundColor="#9871F5" height="145px" zIndex= "14"/>
       <Background title="login" width="none" position="none">
         <HeaderLabs>
           <img src={SheduleIcon}/>
