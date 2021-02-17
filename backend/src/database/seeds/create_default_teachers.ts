@@ -1,10 +1,10 @@
 import Knex from 'knex';
 
 export async function seed(knex: Knex){
-  await knex('teacher').insert([
+  await knex('teachers').insert([
     { name: 'José Luiz Gonzaga',
       email: 'joseluiz@gmail.com',
-      disciplina: 'Banco de Dados',
+      discipline: 'Banco de Dados',
       password: '123456'
     }
   ]);

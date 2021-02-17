@@ -7,7 +7,7 @@
   "scripts": {
     "dev:server": "ts-node-dev --inspect --ignore-watch node_modules src/shared/http/server/index.ts",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
-    "knex:seeds": "knex --knexfile knexfile.ts seed:run"
+    "knex:seed": "knex --knexfile knexfile.ts seed:run"
   },
   "devDependencies": {
     "ts-node-dev": "^1.1.1",
