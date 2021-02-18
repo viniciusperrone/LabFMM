@@ -1,7 +1,7 @@
 import Knex from 'knex';
 
 export async function up(knex: Knex) {
-  knex.schema.createTable('teachers', table => {
+  return knex.schema.createTable('teachers', table => {
     table.increments('id').primary();
     table.string('name').notNullable();
     table.string('email').notNullable().unique();
