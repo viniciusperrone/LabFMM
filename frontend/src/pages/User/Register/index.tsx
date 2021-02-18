@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Link} from 'react-router-dom';
 
 import Background from '../../../components/Background';
 import Header from '../../../components/Header';
+import Modal from '../../../components/Modal';
 
 import EmailIcon from '../../../assets/images/icons/email_icon.svg';
 import BookIcon from '../../../assets/images/icons/icon_book.svg';
@@ -11,14 +12,30 @@ import UserIcon from '../../../assets/images/icons/icon_user.svg';
 
 import { FirstForm, SecondForm, Label, InputRegister, Input, TextAdm, Button } from './style';
 
+import { messages } from '../../../utils/messages';
+
 const RegisterUser: React.FC = () => {
+  const [show, setShow] = useState(false);
+
+  function closedModalHandler (){
+    return setShow(false);
+  }
   return(
       <>
-      
+        <div>
+        { show ? <div style={{
+          background: `rgba(63,61,61,0.8)`,
+          height: `100%`,
+          width: `100%`,
+          position: `absolute`,
+          zIndex: 15,
+          transition: `all 1.3s`,
+        }}></div> : null}
+      </div>
         <Header backgroundColor="none" height="none" zIndex="none"/>
 
         <Background title="register-user" width="none" position="none">
-          
+          <Modal message={messages.register} show={show} closedModalHandler={closedModalHandler} />
           <FirstForm>
             
             <Label htmlFor="name" style={{ marginTop: `-10%`}}>Nome</Label>
@@ -60,9 +77,7 @@ const RegisterUser: React.FC = () => {
               <Input type="password"/>
             </InputRegister>
 
-            <Link to="">
-              <Button>criar conta</Button>
-            </Link>
+            <Button onClick={() => setShow(true)}>criar conta</Button>
       
             <Link to="/register-adm">
               <TextAdm>administrador?</TextAdm>
