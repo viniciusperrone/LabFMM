@@ -6,7 +6,7 @@ const router = Router();
 
 const userController = new UserController();
 
-router.get('/register-use', userController.create);
+router.post('/register-use', userController.create);
 
 router.get('/home-user', ( req: Request, res: Response) => {
   res.send('Page initial');

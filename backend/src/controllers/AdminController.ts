@@ -18,7 +18,7 @@ class AdminController{
         }
 
         const handleRegister = 
-            admin.name.trim().length > 5 && admin.email.trim().length > 5 && admin.password.trim().length > 5
+            admin.name.trim().length >= 4 && admin.email.trim().length > 5 && admin.password.trim().length >= 5
             ? admin 
             : 'Register Invalid!';
 

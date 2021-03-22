@@ -1,6 +1,5 @@
 import express from 'express';
-
-import bodyParser from 'body-parser';
+import cors from 'cors';
 
 import RouterGlobal from '../routes/global';
 import RouterUser from '../routes/User';
@@ -11,7 +10,7 @@ import { variables } from '../../../utils/environment';
 const app = express();
 
 app.use(express.json());
-
+app.use(cors());
 app.use('/', RouterGlobal);
 app.use('/', RouterUser);
 app.use('/', RouterAdm);

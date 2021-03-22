@@ -19,9 +19,11 @@ class UserController{
             password: password
         }
 
-        const handleBody = teacher.name.trim().length > 5 && teacher.email.trim().length > 5 && teacher.discipline.trim().length > 5 && teacher.password.trim().length > 5 
+        const handleBody = teacher.name.trim().length >= 4 && teacher.email.trim().length > 5 && teacher.discipline.trim().length > 5 && teacher.password.trim().length >= 4 
             ? teacher
             : 'Fields invalid!'
+        
+        console.log(handleBody);
         
         const register = await knex('teachers').insert(handleBody);
 

@@ -8,14 +8,8 @@ const router = Router();
 
 const adminController = new AdminController();
 
-router.get('/', async (req: Request, res: Response) => {
-  const adms = await connection('adms').select('*');
 
-  return res.json(adms);
-
-
-});
-router.get('/register-adm', adminController.create);
+router.post('/register-adm', adminController.create);
 
 router.get('/home-adm', ( req: Request, res: Response) => {
   res.send('Page initial adm');
