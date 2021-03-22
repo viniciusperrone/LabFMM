@@ -2,7 +2,11 @@ import { Router, Request, Response } from 'express';
 
 import connection from '../../../../database/connection';
 
+import { AdminController } from '../../../../controllers/AdminController';
+
 const router = Router(); 
+
+const adminController = new AdminController();
 
 router.get('/', async (req: Request, res: Response) => {
   const adms = await connection('adms').select('*');
@@ -11,9 +15,7 @@ router.get('/', async (req: Request, res: Response) => {
 
 
 });
-router.get('/register-adm', ( req: Request, res: Response) => {
-  res.send('Page register adm');
-});
+router.get('/register-adm', adminController.create);
 
 router.get('/home-adm', ( req: Request, res: Response) => {
   res.send('Page initial adm');

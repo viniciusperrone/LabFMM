@@ -1,10 +1,12 @@
 import { Router, Request, Response } from 'express';
 
+import { UserController } from '../../../../controllers/UserController';
+
 const router = Router();
 
-router.get('/register-use', ( req: Request, res: Response) => {
-  res.send('Page register user');
-});
+const userController = new UserController();
+
+router.get('/register-use', userController.create);
 
 router.get('/home-user', ( req: Request, res: Response) => {
   res.send('Page initial');
